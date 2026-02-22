@@ -1,0 +1,1006 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1 rem = 10px: 10px/16px = 62.50% */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img {
+ max-width: 100%;
+ display:block;
+}
+
+/*Fuentes*/
+body {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 1.6rem; /*16 px*/
+    line-height: 2;
+}
+
+/*globales*/
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; 
+    margin: 0 0 5rem 0; 
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+/*Cabeceras y navegación */
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+h1 span {
+    color: purple;
+}
+
+/*como es una clase tiene que llevar punto*/
+/*las ids no llevan punto llevan numeral*/
+
+.nombre-sitio {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rems;
+}
+
+
+.contenedor-navegacion{
+    border-color: #e1e1e1;
+    border-top-style: solid;
+    border-width: 0.1rem;
+}
+
+.navegacion-principal{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;  
+}
+
+/*footer*/
+
+
+.site-footer {
+    border-top: 0.1rem solid #e1e1e1;
+    margin-top: 10rem;
+    padding-top: 5rem;
+}
+
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem; 
+}
+
+.footer-menu a{
+    display: block;
+}
+
+
+.site-footer h3 {
+    margin-bottom: 1rem;
+    color: purple;
+}
+
+.footer-frase {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: purple;
+    border-radius: 1rem;
+}
+
+.footer-frase p {
+    color: white;
+    font-size: 2rem;
+    font-style: italic;
+    margin: 0;
+    font-weight: 600;
+}
+
+
+.copyright {
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.hero{
+    display: flex;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 60rem;
+    object-fit: contain;
+}
+
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.categorias {
+padding-top: 5rem;
+}
+
+.categorias h2{
+    text-align: center;
+}
+
+.categoria a{
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.categoria a:hover{
+    background-color:#8b9fc6;
+    color: white;
+    border-bottom-right-radius: 1rem;
+}
+
+.sobre-nosotros {
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%,#037bc0 100%);
+    padding: 10rem;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100%, 120rem;
+}
+
+.sobre-nosotros-grid{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.texto-nosotros{
+    flex-basis: 50%;
+    padding-left: 10rem;
+    color: white;
+}
+
+/*Contenido productos*/
+.contenido-principal {
+    padding-top: 5rem; 
+}
+
+.listado-productos {
+    display: grid; 
+    grid-template-columns: repeat(6,1fr);
+    gap: 2rem; 
+    row-gap: 2rem;
+}
+
+.producto{
+    background-color: #037bc0;
+}
+
+.texto-producto{
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+
+.texto-producto h3 {
+    margin: 0 0 0.5rem 0;
+    
+}
+
+.texto-producto .precio {
+    font-size: 3rem;
+    font-weight: 900;
+    /*Se usa los bold, para cuando la letra cambie de lugar*/
+}
+
+/*seudo inyeccion de clases*/
+
+.producto:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end:  7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.producto:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end:  4;
+}
+
+.producto:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end:  7;
+}
+
+.producto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end:  3;
+}
+
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5; 
+}
+
+.producto:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.btn{
+    background-color: #037bc0;
+    display: block;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1rem;
+    transition: background-color 0.3s ease-out;
+    text-align: center;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #6f9204;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.max-width-30{
+    max-width: 30rem;
+}
+
+/* Página Nosotros */
+.contenido-nosotros {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.seccion-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin-top: 5rem;
+}
+
+.bloque-nosotros {
+    background-color: white;
+    border: 0.2rem solid purple;
+    padding: 3rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloque-nosotros:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2rem rgba(128, 0, 128, 0.2);
+}
+
+.bloque-nosotros h3 {
+    color: purple;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.bloque-nosotros p {
+    text-align: center;
+    line-height: 2.5;
+}
+
+.lista-valores p {
+    background-color: purple;
+    color: white;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.lista-valores p:last-child {
+    margin-bottom: 0;
+}
+
+/* Página Index - Hero */
+.hero-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-frase {
+    background-color: rgba(128, 0, 128, 0.9);
+    color: white;
+    padding: 4rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+    max-width: 90rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+/* Bienvenida */
+.bienvenida {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.texto-bienvenida {
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 2.5;
+    color: purple;
+    font-weight: 600;
+}
+
+/* Chisme destacado */
+.chisme-destacado {
+    padding-bottom: 5rem;
+}
+
+.destacado-card {
+    background: linear-gradient(135deg, purple 0%, #9b59b6 100%);
+    border-radius: 1.5rem;
+    padding: 4rem;
+    box-shadow: 0 1rem 3rem rgba(128, 0, 128, 0.3);
+}
+
+.destacado-titulo {
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 4.5rem;
+}
+
+.destacado-contenido p {
+    color: white;
+    font-size: 2rem;
+    line-height: 2.5;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.destacado-contenido .btn {
+    max-width: 30rem;
+    margin: 0 auto;
+    background-color: white;
+    color: purple;
+    font-size: 1.8rem;
+}
+
+.destacado-contenido .btn:hover {
+    background-color: #f0f0f0;
+    color: #6b0066;
+}
+
+/* Mini secciones */
+.listado-secciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.seccion-card {
+    border: 0.2rem solid purple;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.seccion-card:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 1.5rem 3rem rgba(128, 0, 128, 0.2);
+}
+
+.texto-seccion {
+    padding: 3rem;
+}
+
+.texto-seccion h3 {
+    color: purple;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.texto-seccion p {
+    text-align: center;
+    line-height: 2.5;
+    margin-bottom: 3rem;
+}
+
+.texto-seccion .btn {
+    background-color: purple;
+}
+
+.texto-seccion .btn:hover {
+    background-color: #6b0066;
+}
+
+/* Página Chisme Diario */
+.contenido-chismes {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.intro-chismes {
+    text-align: center;
+    font-size: 2rem;
+    color: purple;
+    margin-bottom: 5rem;
+    font-weight: 600;
+}
+
+.listado-chismes {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.chisme-item {
+    border: 0.3rem solid;
+    border-radius: 1.5rem;
+    padding: 3rem;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chisme-item:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.nivel-candente {
+    border-color: #dc3545;
+}
+
+.nivel-picante {
+    border-color: #ffc107;
+}
+
+.nivel-suave {
+    border-color: #28a745;
+}
+
+.chisme-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.nivel-badge {
+    padding: 0.8rem 2rem;
+    border-radius: 5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.nivel-candente .nivel-badge {
+    background-color: #dc3545;
+}
+
+.nivel-picante .nivel-badge {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.nivel-suave .nivel-badge {
+    background-color: #28a745;
+}
+
+.fecha {
+    color: #666;
+    font-size: 1.4rem;
+}
+
+.chisme-item h3 {
+    color: purple;
+    margin-bottom: 2rem;
+}
+
+.chisme-intro p {
+    font-style: italic;
+    color: purple;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.chisme-contenido p {
+    line-height: 2.5;
+    margin-bottom: 2rem;
+}
+
+.chisme-cierre p {
+    font-style: italic;
+    text-align: right;
+    color: #666;
+    font-weight: 600;
+    margin-top: 3rem;
+}
+
+.aviso-legal {
+    background-color: #f8f9fa;
+    border: 0.2rem solid purple;
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.aviso-legal p {
+    color: purple;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+/* Página Cafecito */
+.contenido-cafecito {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.intro-cafecito {
+    text-align: center;
+    font-size: 2rem;
+    color: purple;
+    margin-bottom: 5rem;
+    font-weight: 600;
+}
+
+.seccion-cafecito {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 6rem;
+}
+
+.cafecito-card {
+    background-color: white;
+    border: 0.2rem solid purple;
+    border-radius: 1rem;
+    padding: 3rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cafecito-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2rem rgba(128, 0, 128, 0.2);
+}
+
+.cafecito-card h3 {
+    color: purple;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cafecito-contenido p {
+    line-height: 2.5;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.firma-consuelo {
+    font-style: italic;
+    color: purple;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.encuesta-section {
+    margin-bottom: 6rem;
+}
+
+.encuesta-card {
+    background: linear-gradient(135deg, purple 0%, #9b59b6 100%);
+    border-radius: 1.5rem;
+    padding: 4rem;
+    color: white;
+}
+
+.encuesta-card h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.encuesta-card > p {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.opciones-encuesta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.opcion {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.opcion:hover {
+    transform: scale(1.05);
+}
+
+.opcion p {
+    color: purple;
+    font-weight: 700;
+    margin: 0;
+}
+
+.historias-section {
+    margin-bottom: 5rem;
+}
+
+.historia-card {
+    background-color: #f8f9fa;
+    border-left: 0.5rem solid purple;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+.historia-card h3 {
+    color: purple;
+    margin-bottom: 2rem;
+}
+
+.historia-card p {
+    line-height: 2.5;
+}
+
+.nota-consuelo {
+    font-style: italic;
+    color: purple;
+    font-weight: 700;
+    margin-top: 2rem;
+    border-top: 0.2rem solid purple;
+    padding-top: 2rem;
+}
+
+/* Página Contacto */
+.contenido-contacto {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.intro-contacto {
+    text-align: center;
+    font-size: 2rem;
+    color: purple;
+    margin-bottom: 5rem;
+    font-weight: 600;
+}
+
+.formulario-section {
+    margin-bottom: 6rem;
+}
+
+.formulario-contacto {
+    max-width: 80rem;
+    margin: 0 auto;
+    background-color: white;
+    border: 0.2rem solid purple;
+    border-radius: 1.5rem;
+    padding: 4rem;
+}
+
+.formulario-contacto h3 {
+    color: purple;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.campo {
+    margin-bottom: 2.5rem;
+}
+
+.campo label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border: 0.2rem solid #e1e1e1;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: purple;
+}
+
+.campo-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.campo-checkbox input {
+    width: auto;
+    margin-right: 1rem;
+}
+
+.formulario-contacto .btn {
+    width: 100%;
+    background-color: purple;
+    font-size: 1.8rem;
+}
+
+.formulario-contacto .btn:hover {
+    background-color: #6b0066;
+}
+
+.nota-footer-form {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 0.2rem solid #e1e1e1;
+    text-align: center;
+}
+
+.nota-footer-form p {
+    font-style: italic;
+    color: purple;
+    font-weight: 600;
+}
+
+.opciones-contacto {
+    margin-top: 6rem;
+}
+
+.grid-opciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.opcion-card {
+    background-color: white;
+    border: 0.2rem solid purple;
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.opcion-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2rem rgba(128, 0, 128, 0.2);
+}
+
+.opcion-card h3 {
+    color: purple;
+    margin-bottom: 2rem;
+}
+
+.opcion-card p {
+    line-height: 2.5;
+}
+
+.opcion-card strong {
+    color: purple;
+}
+
+/* Secciones con imágenes (universal para todas las páginas) */
+.seccion-con-imagen {
+    padding: 5rem 0;
+}
+
+.grid-imagen-texto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.grid-imagen-texto.invertido {
+    direction: rtl;
+}
+
+.grid-imagen-texto.invertido > * {
+    direction: ltr;
+}
+
+.imagen-contenedor {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.imagen-contenedor img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.imagen-contenedor:hover img {
+    transform: scale(1.05);
+}
+
+.texto-contenedor {
+    padding: 2rem;
+}
+
+.texto-contenedor h2,
+.texto-contenedor h3 {
+    color: purple;
+    margin-bottom: 2rem;
+}
+
+.texto-contenedor p {
+    line-height: 2.5;
+    margin-bottom: 2rem;
+}
+
+.lista-valores-texto p {
+    line-height: 2.5;
+    margin-bottom: 1.5rem;
+}
+
+.lista-valores-texto strong {
+    color: purple;
+    font-weight: 700;
+}
+/*TABLET FIRST*/
+@media(max-width: 768px){
+    .seccion-cafecito {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .opciones-encuesta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-opciones {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-imagen-texto {
+        grid-template-columns: 1fr;
+    }
+    .grid-imagen-texto.invertido {
+        direction: ltr;
+    }
+    .grid-imagen-texto.invertido > * {
+        direction: rtl;
+    }
+    .listado-secciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem; 
+}
+
+.seccion-nosotros {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+    margin-top: 5rem;
+}
+.lista-valores-texto p {
+    line-height: 2.5;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+    
+}
+
+
+
+/*MOBILE FIRST*/
+@media(max-width: 600px){
+    .seccion-cafecito {
+        grid-template-columns: 1fr;
+    }
+    .opciones-encuesta {
+        grid-template-columns: 1fr;
+    }
+    .grid-opciones {
+        grid-template-columns: 1fr;
+    }
+    .grid-imagen-texto {
+        grid-template-columns: 1fr;
+    }
+    .grid-imagen-texto.invertido {
+        direction: ltr;
+    }
+    .grid-imagen-texto.invertido > * {
+        direction: rtl;
+    }     
+    
+    .listado-secciones {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 4rem; 
+    text-align: center;
+}
+
+.bloque-nosotros {
+    background-color: white;
+    border: 0.2rem solid purple;
+    padding: 3rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.seccion-nosotros {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+    margin-top: 5rem;
+}
+.lista-valores-texto p {
+    line-height: 2.5;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+    
+}
+
+
+
+
+
+
+
+
+
+
