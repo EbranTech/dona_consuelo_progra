@@ -7,6 +7,7 @@ html {
     box-sizing: inherit;
 }
 
+
 img {
  max-width: 100%;
  display:block;
@@ -75,6 +76,14 @@ h1 span {
     padding-bottom: 2rem;
     display: flex;
     justify-content: space-around;  
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu svg {
+    cursor: pointer;
 }
 
 /*footer*/
@@ -841,12 +850,9 @@ padding-top: 5rem;
 }
 
 .grid-imagen-texto.invertido {
-    direction: rtl;
+    direction: rtl ;
 }
 
-.grid-imagen-texto.invertido > * {
-    direction: ltr;
-}
 
 .imagen-contenedor {
     width: 100%;
@@ -904,9 +910,6 @@ padding-top: 5rem;
     .grid-imagen-texto {
         grid-template-columns: 1fr;
     }
-    .grid-imagen-texto.invertido {
-        direction: ltr;
-    }
     .grid-imagen-texto.invertido > * {
         direction: rtl;
     }
@@ -933,6 +936,9 @@ padding-top: 5rem;
     line-height: 2.5;
     margin-bottom: 1.5rem;
     justify-content: center;
+}
+.grid-imagen-texto.invertido > * {
+    direction: ltr;
 }
     
 }
@@ -992,10 +998,68 @@ padding-top: 5rem;
     justify-content: center;
 }
 
+.grid-imagen-texto.invertido > * {
+    direction: ltr  ;
+}
     
 }
 
 
+
+/* Menú Toggle */
+@media (max-width: 768px) {
+    .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: black;
+}
+
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        width: 100%;
+        gap: 1.5rem; 
+
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .navegacion-principal{
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    .navegacion-principal {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navegacion-principal.active {
+        display: flex;
+    }
+}
 
 
 

@@ -1,143 +1,150 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="js/script.js" defer></script>
-    <title>Doña Consuelo Informa</title>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/Normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="js/script.js" defer></script>
+        <title>Doña Consuelo Informa</title>
 
-</head>
-<body>
-    <header>
-        <h1 class="nombre-sitio">¿Porque si no lo cuento yo?....<span> ¿Entonces quien?</span></h1>
-    </header>
+    </head>
+    <body>
+        <header>
+            <h1 class="nombre-sitio">¿Porque si no lo cuento yo?....<span> ¿Entonces quien?</span></h1>
+        </header>
 
-    <div class="contenedor-navegacion">
-        <nav class="navegacion-principal">
-            <a class="enlace" href="index.html">Inicio</a>
-            <a class="enlace" href="cafecito.html">Cafecito</a>
-            <a class="enlace" href="chisme-diario.html">Chisme diario</a>
-            <a class="enlace" href="nosotros.html">Nosotros</a>
-            <a class="enlace" href="contacto.html">Contacto</a>
-        </nav>
-    </div>
-
-    <div class="hero">
-        <div class="contenedor hero-contenido">
-            <h2 class="hero-frase">Aquí se viene a informarse… y a chismear con respeto.</h2>
-        </div>
-    </div>
-
-    <section class="contenedor bienvenida">
-        <p class="texto-bienvenida">Bienvenidos al rincón oficial de Doña Consuelo, la vecina que siempre sabe qué pasó, qué no pasó… y qué dicen que pasó</p>
-    </section>
-
-    <section class="contenedor seccion-con-imagen">
-        <div class="grid-imagen-texto">
-            <div class="imagen-contenedor">
-                <!-- IMAGEN 1: Colocar aquí una imagen de Doña Consuelo o persona tomando café (800x600px recomendado) -->
-                <img src="img/dona-consuelo.jpg" alt="Doña Consuelo tomando café">
+        <div class="contenedor-navegacion">
+            <div class="mobile-menu">
+                <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>  
+                </button>
             </div>
-            <div class="texto-contenedor">
-                <h2>Conoce a Doña Consuelo</h2>
-                <p>La vecina más informada del barrio. Desde su silla en la banqueta, nada se le escapa. Con más de 30 años viviendo en la colonia, Doña Consuelo se ha convertido en la cronista oficial de todo lo que pasa... y de lo que dicen que pasa.</p>
-                <p>Su cafecito siempre está listo y sus orejas siempre atentas. No es chismosa, es... digamos que tiene muy buena memoria y le gusta compartir.</p>
+            <nav id="navegacion" class="navegacion-principal">
+                <a class="enlace" href="index.html">Inicio</a>
+                <a class="enlace" href="cafecito.html">Cafecito</a>
+                <a class="enlace" href="chisme-diario.html">Chisme diario</a>
+                <a class="enlace" href="nosotros.html">Nosotros</a>
+                <a class="enlace" href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+
+        <div class="hero">
+            <div class="contenedor hero-contenido">
+                <h2 class="hero-frase">Aquí se viene a informarse… y a chismear con respeto.</h2>
             </div>
         </div>
-    </section>
 
-    <section class="contenedor chisme-destacado">
-        <div class="destacado-card">
-            <h2 class="destacado-titulo">El chisme más caliente</h2>
-            <div class="destacado-contenido">
-                <p>En el mercado central, dicen que Don José le está haciendo competencia desleal a Doña María con sus chuchitos. Pero ella ya se enteró y anda preparando su venganza culinaria...</p>
-                <a class="btn" href="chisme-diario.html">Leer el chisme completo</a>
-            </div>
-        </div>
-    </section>
+        <section class="contenedor bienvenida">
+            <p class="texto-bienvenida">Bienvenidos al rincón oficial de Doña Consuelo, la vecina que siempre sabe qué pasó, qué no pasó… y qué dicen que pasó</p>
+        </section>
 
-    <section class="contenedor seccion-con-imagen">
-        <div class="grid-imagen-texto invertido">
-            <div class="texto-contenedor">
-                <h2>El Arte del Chisme Responsable</h2>
-                <p>Aquí no andamos inventando cosas. Todo lo que contamos tiene su fuente (aunque a veces la fuente sea "me dijo una amiga que le dijo su prima"). Pero eso sí, siempre con respeto y sin mala intención.</p>
-                <p>El chisme es parte de nuestra cultura chapina. Es cómo nos enteramos de las cosas, cómo nos conectamos con el barrio y cómo nos reímos de la vida cotidiana.</p>
-            </div>
-            <div class="imagen-contenedor">
-                <!-- IMAGEN 2: Colocar aquí una imagen de personas conversando o vecinas platicando (800x600px recomendado) -->
-                <img src="img/cafecito-barrio.jpg" alt="Vecinas tomando café y platicando">
-            </div>
-        </div>
-    </section>
-
-    <div>
-        <main class="contenedor contenido-principal">
-            <h2 class="text-center">Mini Secciones</h2>
-            <div class="listado-secciones">
-                <div class="seccion-card">
-                    <div class="texto-seccion">
-                        <h3>Últimos chismes</h3>
-                        <p>Las noticias más recientes del barrio. Desde el nuevo negocio de doña Chayo hasta la boda sorpresa de los Pérez. Aquí no se nos escapa nada.</p>
-                        <a class="btn" href="chisme-diario.html">Ver chismes</a>
-                    </div>
+        <section class="contenedor seccion-con-imagen">
+            <div class="grid-imagen-texto">
+                <div class="imagen-contenedor">
+                    <!-- IMAGEN 1: Colocar aquí una imagen de Doña Consuelo o persona tomando café (800x600px recomendado) -->
+                    <img src="img/dona-consuelo.jpg" alt="Doña Consuelo tomando café">
                 </div>
-                <div class="seccion-card">
-                    <div class="texto-seccion">
-                        <h3>Chisme con cafecito</h3>
-                        <p>Los chismes que se cuentan mejor con una taza de café en la mano. Historias largas, con detalles jugosos y todo el sazón chapín.</p>
-                        <a class="btn" href="cafecito.html">Tomar cafecito</a>
-                    </div>
-                </div>
-                <div class="seccion-card">
-                    <div class="texto-seccion">
-                        <h3>Lo que anda diciendo la gente</h3>
-                        <p>Rumores, comentarios y versiones que andan circulando por ahí. Recuerda: aquí solo reportamos, tú decides si creer o no.</p>
-                        <a class="btn" href="chisme-diario.html">Escuchar rumores</a>
-                    </div>
+                <div class="texto-contenedor">
+                    <h2>Conoce a Doña Consuelo</h2>
+                    <p>La vecina más informada del barrio. Desde su silla en la banqueta, nada se le escapa. Con más de 30 años viviendo en la colonia, Doña Consuelo se ha convertido en la cronista oficial de todo lo que pasa... y de lo que dicen que pasa.</p>
+                    <p>Su cafecito siempre está listo y sus orejas siempre atentas. No es chismosa, es... digamos que tiene muy buena memoria y le gusta compartir.</p>
                 </div>
             </div>
-        </main>
-    </div>
+        </section>
 
-    <footer class="site-footer">
-        <div class="grid-footer contenedor">
-            <div>
-                <h3>Navegación</h3>
-                <nav class="footer-menu">
-                    <a href="index.html">Inicio</a>
-                    <a href="chisme-diario.html">El Chisme del Día</a>
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="cafecito.html">El Cafecito</a>
-                </nav>
+        <section class="contenedor chisme-destacado">
+            <div class="destacado-card">
+                <h2 class="destacado-titulo">El chisme más caliente</h2>
+                <div class="destacado-contenido">
+                    <p>En el mercado central, dicen que Don José le está haciendo competencia desleal a Doña María con sus chuchitos. Pero ella ya se enteró y anda preparando su venganza culinaria...</p>
+                    <a class="btn" href="chisme-diario.html">Leer el chisme completo</a>
+                </div>
             </div>
-            <div>
-                <h3>Contacto</h3>
-                <nav class="footer-menu">
-                    <a href="contacto.html">Enviar chisme</a>
-                    <a href="contacto.html">Sugerencias</a>
-                    <a href="contacto.html">Redes sociales</a>
-                </nav>
+        </section>
+
+        <section class="contenedor seccion-con-imagen">
+            <div class="grid-imagen-texto invertido">
+                <div class="texto-contenedor">
+                    <h2>El Arte del Chisme Responsable</h2>
+                    <p>Aquí no andamos inventando cosas. Todo lo que contamos tiene su fuente (aunque a veces la fuente sea "me dijo una amiga que le dijo su prima"). Pero eso sí, siempre con respeto y sin mala intención.</p>
+                    <p>El chisme es parte de nuestra cultura chapina. Es cómo nos enteramos de las cosas, cómo nos conectamos con el barrio y cómo nos reímos de la vida cotidiana.</p>
+                </div>
+                <div class="imagen-contenedor">
+                    <!-- IMAGEN 2: Colocar aquí una imagen de personas conversando o vecinas platicando (800x600px recomendado) -->
+                    <img src="img/cafecito-barrio.jpg" alt="Vecinas tomando café y platicando">
+                </div>
             </div>
-            <div>
-                <h3>Lo más chismeado</h3>
-                <nav class="footer-menu">
-                    <a href="chisme-diario.html">Archivo de chismes</a>
-                    <a href="chisme-diario.html">Chisme del mes</a>
-                    <a href="chisme-diario.html">Más comentados</a>
-                </nav>
-            </div>
+        </section>
+
+        <div>
+            <main class="contenedor contenido-principal">
+                <h2 class="text-center">Mini Secciones</h2>
+                <div class="listado-secciones">
+                    <div class="seccion-card">
+                        <div class="texto-seccion">
+                            <h3>Últimos chismes</h3>
+                            <p>Las noticias más recientes del barrio. Desde el nuevo negocio de doña Chayo hasta la boda sorpresa de los Pérez. Aquí no se nos escapa nada.</p>
+                            <a class="btn" href="chisme-diario.html">Ver chismes</a>
+                        </div>
+                    </div>
+                    <div class="seccion-card">
+                        <div class="texto-seccion">
+                            <h3>Chisme con cafecito</h3>
+                            <p>Los chismes que se cuentan mejor con una taza de café en la mano. Historias largas, con detalles jugosos y todo el sazón chapín.</p>
+                            <a class="btn" href="cafecito.html">Tomar cafecito</a>
+                        </div>
+                    </div>
+                    <div class="seccion-card">
+                        <div class="texto-seccion">
+                            <h3>Lo que anda diciendo la gente</h3>
+                            <p>Rumores, comentarios y versiones que andan circulando por ahí. Recuerda: aquí solo reportamos, tú decides si creer o no.</p>
+                            <a class="btn" href="chisme-diario.html">Escuchar rumores</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-        <div class="footer-frase">
-            <p>"El que nada debe... igual se pone nervioso"</p>
-        </div>
-        <p class="copyright">Todos los derechos reservados &copy; Doña Consuelo Informa - Todo lo aquí contado es chisme ficticio, sátira y humor</p>
-    </footer>
-    
-</body>
-</html>
+
+        <footer class="site-footer">
+            <div class="grid-footer contenedor">
+                <div>
+                    <h3>Navegación</h3>
+                    <nav class="footer-menu">
+                        <a href="index.html">Inicio</a>
+                        <a href="chisme-diario.html">El Chisme del Día</a>
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="cafecito.html">El Cafecito</a>
+                    </nav>
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <nav class="footer-menu">
+                        <a href="contacto.html">Enviar chisme</a>
+                        <a href="contacto.html">Sugerencias</a>
+                        <a href="contacto.html">Redes sociales</a>
+                    </nav>
+                </div>
+                <div>
+                    <h3>Lo más chismeado</h3>
+                    <nav class="footer-menu">
+                        <a href="chisme-diario.html">Archivo de chismes</a>
+                        <a href="chisme-diario.html">Chisme del mes</a>
+                        <a href="chisme-diario.html">Más comentados</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-frase">
+                <p>"El que nada debe... igual se pone nervioso"</p>
+            </div>
+            <p class="copyright">Todos los derechos reservados &copy; Doña Consuelo Informa - Todo lo aquí contado es chisme ficticio, sátira y humor</p>
+        </footer>
+        
+    </body>
+    </html>
